@@ -1,0 +1,1 @@
+This is a repository housing documentation/simulation resources for the pseudo-science-based magic system implemented in my worldbuilding. The hope is that it will aid the progression of a more "realistic" system.

@@ -4,7 +4,7 @@ module particleModule
   end type particle
 
   contains
-    int function search(p,t) !binary search
+    integer function search(p,t) !binary search
       type(particle)::p
       int::l,r
       l=1

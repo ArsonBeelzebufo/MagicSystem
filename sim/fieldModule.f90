@@ -5,9 +5,11 @@ module fieldModule
   type(particle),dimension(:)::field
 
   contains
-    real,dimension(3) function strength(pos,t)
+    function strength(pos)
+      real,dimension(3)::strength,pos
     end function strength
   
-    subroutine simulate()
+    subroutine simulate(dt)
+      real::dt
     end subroutine simulate
 end module fieldModule

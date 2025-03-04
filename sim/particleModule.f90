@@ -1,7 +1,7 @@
 module particleModule
   type particle
     real,dimension(3)::pos,v
-    real::t,PE !PE=percent energy; amount of intrinsic energy divided by the energy constant
+    real::PE !PE=percent energy; amount of intrinsic energy divided by the energy constant
   end type particle
 
   contains

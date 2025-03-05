@@ -1,5 +1,4 @@
 program simulation
-  use fieldModule
   use gravModule
   implicit none
   

@@ -14,7 +14,7 @@ module gravModule
       position=part%pos
       do i=1,n
         if(i/=p)then
-          real,dimension(3)::d,other
+          real,dimension(3)::d
           real::r,FReduced
           type(particle)::other
           other=field(i)

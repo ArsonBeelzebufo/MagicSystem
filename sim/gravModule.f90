@@ -1,4 +1,4 @@
-@module gravModule
+module gravModule
   use fieldModule
   implicit none
 

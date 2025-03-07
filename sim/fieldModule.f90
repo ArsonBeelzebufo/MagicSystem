@@ -20,7 +20,7 @@ module fieldModule
           r=dot_product(d,d)**.5
           temp=(sigma/r)**6
           FReduced=48*epsilon*temp*(temp-.5)/(r**2)
-          strength=strength+other*FReduced
+          strength=strength+d*FReduced
         end if
       end do
     end function strength

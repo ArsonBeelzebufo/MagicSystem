@@ -2,7 +2,8 @@ module fieldModule
   use particleModule
   implicit none
 
-  real::epsilon,sigma,t,n,ep,c,k
+  integer::n
+  real::epsilon,sigma,t,ep,c,k
   type(particle),dimension(n)::field
 
   contains

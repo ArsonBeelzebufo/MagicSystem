@@ -4,18 +4,17 @@ module fieldModule
 
   integer::n
   real::epsilon,sigma,t,ep,c,k
-  type(particle),dimension(n)::field
+  type(particle),allocatable::field(:)
 
   contains
     function strength(p)
-      real,dimension(3)::strength,position
+      real,dimension(3)::strength,position,d,other
+      integer::p,i
+      real::r,FReduced,temp
       strength=(/0,0,0/)
-      integer::p
       position=field(p)%pos
       do i=1,n
         if(i/=p)then
-          real,dimension(3)::d,other
-          real::r,FReduced,temp
           other=field(i)%pos
           d=other-position
           r=dot_product(d,d)**.5

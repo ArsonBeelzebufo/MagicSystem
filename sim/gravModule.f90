@@ -6,17 +6,15 @@ module gravModule
 
   contains
     function grav(p)
-      real,dimension(3)::grav,position
+      real,dimension(3)::grav,position,d
+      integer::p,i
+      type(particle)::part,other
+      real::r,FReduced
       grav=(/0,0,0/)
-      integer::p
-      type(particle)::part
       part=field(p)
       position=part%pos
       do i=1,n
         if(i/=p)then
-          real,dimension(3)::d
-          real::r,FReduced
-          type(particle)::other
           other=field(i)
           d=other%pos-position
           r=dot_product(d,d)**.5
